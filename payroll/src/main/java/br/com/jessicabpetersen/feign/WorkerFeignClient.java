@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import br.com.jessicabpetersen.model.Worker;
 
 @Component
-@FeignClient(name = "ms-worker", url= "localhost:8001", path="/workers")
+@FeignClient(name = "ms-worker", path="/workers")
 public interface WorkerFeignClient {
 	
 	@GetMapping("/{id}")
